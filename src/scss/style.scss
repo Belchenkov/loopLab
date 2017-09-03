@@ -1,0 +1,39 @@
+// Main Sass File
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed:400,700');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+// Variables
+$bg-color: #333;
+$font-color: #fff;
+$primary-color: #008ed6;
+$bg-font: 'Encode Sans Semi Condensed', sans-serif;
+$navbar-brand-font: 'Indie Flower', cursive;
+
+
+body {
+  background-color: $bg-color;
+  color: $font-color;
+  font-family: $bg-font;
+}
+
+.navbar {
+  box-shadow: 0 2px 13px $primary-color;
+  opacity: 0.8;
+
+  .navbar-brand {
+    font-family: $navbar-brand-font;
+    font-size: 1.9em;
+    text-shadow: 0 1px 8px $primary-color;
+  }
+}
+
+
+
+/* Media */
+@media (max-width: 576px) {
+  nav .container {
+    width: 100%;
+  }
+}
