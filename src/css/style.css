@@ -30,13 +30,10 @@ body {
 #home-section {
   background: url(../img/home.jpeg) no-repeat center top fixed;
   background-size: cover;
-  width: 100vw;
+  width: 100%;
   height: 100vh; }
   #home-section .dark-overlay {
     background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%; }
   #home-section .home-inner {
@@ -55,6 +52,24 @@ body {
     padding: 10px 0;
     margin-bottom: -10px; }
   #home-section .fa.fa-check {
+    color: #008ed6;
+    background-color: #000;
+    opacity: 0.8;
+    padding: 4px;
+    border-radius: 50%;
+    font-size: 15px;
+    box-shadow: 0 1px 10px #fff;
+    position: relative;
+    top: 15px; }
+
+.img-explore {
+  border-radius: 30px; }
+
+#explore-section {
+  color: #000;
+  text-shadow: none;
+  background-color: #f4f4f4; }
+  #explore-section .fa.fa-check {
     color: #008ed6;
     background-color: #000;
     opacity: 0.8;
