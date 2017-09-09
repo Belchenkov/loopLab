@@ -20,7 +20,7 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Home</a>
+                            <a href="#home-section" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
                             <a href="#explore-head-section" class="nav-link">Explore</a>
@@ -42,7 +42,7 @@
                 <div class="home-inner">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-8">
+                            <div class="col-md-8 d-none d-md-block">
                                 <h1 class="display-4">Build <strong>social profiles</strong>, gain revenue and <strong>profits</strong></h1>
                                 <div class="d-flex flex-row">
                                     <div class="p-4 align-self-start">
@@ -71,7 +71,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-md-4">
                                 <div class="card card-primary card-form text-center">
                                     <div class="card-block">
                                         <h3>Sing Up Today</h3>
@@ -248,8 +248,70 @@
             </div>
         </section>
 
+        <!-- MAIN FOOTER -->
+        <footer id="main-footer" class="bg-inverse">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <div class="py-4">
+                            <h1 class="h3">LoopLAB</h1>
+                            <p>Copyright &copy; 2017</p>
+                            <button class="btn btn-primary"
+                                    data-toggle="modal" data-target="#contactModal">
+                                Contact Us
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- CONTACT MODAL -->
+        <div class="modal fade" id="contactModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header  text-center">
+                        <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+                        <button class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Email</label>
+                                <textarea type="email"  id="message" class="form-control"></textarea>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-outline-primary btn-block">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+
+        <!-- Smooth slide to section -->
+        <script type="text/javascript">
+            $(function(){
+                $("a[href^='#']").click(function(){
+                    var _href = $(this).attr("href");
+                    $("html, body").animate({scrollTop: $(_href).offset().top+"px"}, 700);
+                    return false;
+                });
+            });
+        </script>
     </body>
 </html>

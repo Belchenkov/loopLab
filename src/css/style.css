@@ -82,6 +82,16 @@ section {
   color: #000;
   background-color: #f4f4f4; }
 
+button {
+  text-transform: uppercase;
+  box-shadow: 0 1px 14px #000;
+  font-weight: bold;
+  font-family: "Encode Sans Semi Condensed", sans-serif; }
+
+#contactModal {
+  color: #000000;
+  text-shadow: none; }
+
 /* Media */
 @media (max-width: 576px) {
   nav .container {
